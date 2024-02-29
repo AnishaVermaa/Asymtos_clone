@@ -1,0 +1,636 @@
+/* navbar */
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar {
+  background-color: #04324b;
+  color: white;
+  padding: 15px 0;
+}
+a {
+  position: relative; /* Positioning context for pseudo-element */
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color */
+}
+
+a::after {
+  content: ''; /* Add content for pseudo-element */
+  position: absolute; /* Position the pseudo-element */
+  left: 0; /* Align at the left */
+  bottom: -2px; /* Align at the bottom with some offset */
+  width: 100%; /* Span the entire width */
+  height: 2px; /* Set the height of the border */
+  background-color: transparent; /* Initial background color (invisible) */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+a:hover::after {
+  background-color: white; /* Change background color on hover */
+}
+
+
+#logo-img {
+  height: 2.5em;
+  width: 10em;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle img {
+  width: 30px;
+  height: auto;
+}
+
+/* home */
+
+.bg {
+  background-color: #f0f0f0;
+  padding-top: 10%;
+  padding-left: 10px;
+  color: white;
+  background-image: url("../assets/bannerx.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 45vh;
+  width: 100%;
+}
+
+#heading {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left:100px;
+  
+}
+
+#description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: white;
+  margin-left:100px;
+  
+}
+
+
+/* work */
+h2{
+  text-align: center;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Adjust the gap between items as needed */
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 10vh;
+  margin-bottom: 80px;
+}
+
+.work-items {
+  text-align: center; /* Center text within each item */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.411); /* Add box shadow */
+  border-radius: 8px; /* Add border radius for a rounded appearance */
+  overflow: hidden;
+  position: relative;
+  height: 40vh;
+  
+}
+
+.work-items img{
+  float: none;
+  height: 15vh;
+  
+  margin-top: 10vh;
+}
+
+.w1::after{
+  content: "";
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+  bottom:-99%;
+  
+  left: 0;
+  position: absolute;
+  transition: all ease 1s;
+}
+.w1:hover:after{
+  content: "Streamline the cloud resource management";
+  bottom: 0;
+  text-align: center;
+  left: 0; 
+  padding-top: 30%;
+  color: #f0f0f0;
+}
+.w2::after{
+  content: "";
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+  bottom:-99%;
+  
+  left: 0;
+  position: absolute;
+  transition: all ease 1s;
+}
+.w2:hover:after{
+  content: "Run cloud-native applications for the Edge and On-Prem";
+  bottom: 0;
+  text-align: center;
+  left: 0; 
+  padding-top: 30%;
+  color: #f0f0f0;
+}
+.w3::after{
+  content: "";
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+  bottom:-99%;
+  
+  left: 0;
+  position: absolute;
+  transition: all ease 1s;
+}
+.w3:hover:after{
+  content: "Security First: Zero Trust, Zero Touch and Zero Code";
+  bottom: 0;
+  text-align: center;
+  left: 0; 
+  padding-top: 30%;
+  color: #f0f0f0;
+}
+.w4::after{
+  content: "";
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+  bottom:-99%;
+  left: 0;
+  position: absolute;
+  transition: all ease 1s;
+}
+.w4:hover:after{
+  content: "Analytics and AI to make Edge Intelligent";
+  bottom: 0;
+  text-align: center;
+  left: 0; 
+  padding-top: 30%;
+  color: #f0f0f0;
+}
+
+/* services*/
+#services {
+  font-family: Arial, Helvetica, sans-serif;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
+}
+
+.services1 {
+  color: #007fff;
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 10px;
+}
+
+.services-item img {
+  padding-top: 1rem;
+  height: 45px;
+  /* float: left; */
+ 
+}
+.services-para {
+  padding-left: 4.5rem;
+  font-size: small;
+}
+.services-img1 {
+  padding: 1.5rem;
+  display: block;
+  margin: 0 auto;
+  height: 40vh;
+  padding-bottom:0;
+ 
+ 
+  float: none;
+}
+.our-services{
+  margin-top: 30px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/img-center1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+/*team*/
+.c1 img{
+  height: 30vh;
+  float: none;
+}
+.c2 img{
+  height: 30vh;
+
+  float: none;
+}
+.c3 img{
+  height: 30vh;
+  float: none;
+}
+.c4 img{
+  height: 30vh;
+  float: none;
+}
+.team{
+background-color: #41464b;
+margin-top: 85vh;
+padding-top: 30px;
+height: 60vh;
+}
+
+h5,p{
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  justify-content: center;
+  text-align: center;
+}
+.cards img{
+  border: transparent 1px solid;
+  border-radius: 5px;
+}
+
+.cards img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+
+
+/*carrer*/
+
+.career {
+  height: 20vh;
+  padding: 0 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media (max-width: 991px) {
+  .team{
+    height: 70vh;
+    margin-top:115vh;
+  }
+  .c1 img{
+    height: 20vh;
+  }
+  .c2 img{
+    height: 20vh;
+  }
+  .c3 img{
+    height: 20vh;
+  }
+  .c4 img{
+    height: 20vh;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .cards img{
+    border: transparent 1px solid;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .cards img:hover {
+    margin-top: 0;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  }
+}
+/*contact*/
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr auto;
+  gap: 20px;
+  color: white;
+  background-image: url("https://asymtos.com/assets/images/contact-us.png");
+}
+
+img{
+  height: 20px;
+  float: left;
+}
+
+.item {
+  padding: 20px;
+}
+
+.carrer {
+  background-color: #fff;
+  color: black;
+}
+
+.full-width {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+#fname {
+  height: 40px;
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  opacity: 0.9;
+  border: #fff 1px solid;
+  color: #fff;
+  margin-bottom: 20px;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+#lname {
+  display: inline;
+  height: 40px;
+  width: 40vw;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  border: #fff 1px solid;
+}
+
+#message {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  opacity: 0.9;
+  border: #fff 1px solid;
+  color: #fff;
+  height: 10vh;
+  width: 40vw;
+  margin-bottom: 20px;
+}
+
+.half-width {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#btn {
+  height: 7vh;
+  width: 10vw;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  opacity: 0.9;
+  border: 1px solid white;
+  color: #fff;
+}
+
+.s2 {
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+}
+
+
+hr {
+  width: 200px;
+  margin-left: 0;
+  border-color: blue; /* Change the color of the horizontal rule */
+}
+
+
+
+/*footer*/
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  height: 20vh;
+}
+
+.social-icons img {
+  margin: 0 5px;
+  height: 7vh;
+  transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+.social-icons img:hover {
+  transform: translateY(-10px); /* Move the image up by 5 pixels on hover */
+}
+
+#footer span {
+  margin-top: 10px;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+  
+
+  .services-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .our-services {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/mb-bgimg.png);
+    background-size: 70% 80%;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+}
+
+
+  
+}
+@media (max-width: 761px) {
+  
+
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+
+
+
+
+
+
+/* Media query for screen widths up to 991px */
+@media (max-width: 991px) {
+  .work-container {
+    grid-template-columns: repeat(2, 1fr); /* Change to a 2-column grid */
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+  #heading {
+      text-align: center;
+  }
+  #description {
+      text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #bg {
+      background-image: url("../assets/mb-banner.png");
+  }
+  #heading {
+      text-align: center;
+  }
+  #description {
+      text-align: center;
+  }
+}
+
+span {
+  color: blue;
+}
+
+#cloud {
+  height: 60vh;
+  width: 50vw;
+  float: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about {
+  height: 60vh;
+  background-color: #f9f9f9;
+}
+
+.right {
+  padding-left: 10vh;
+  padding-top: 5vh;
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.r1 {
+  text-align: left;
+  margin-top: 40px;
+  grid-column: span 2;
+}
+
+.r2,
+.r3 {
+  margin-top: 20px;
+  grid-column: span 1;
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  .about {
+      height: 120vh;
+      background-color: #f9f9f9;
+  }
+  .right {
+      grid-template-columns: 1fr;
+  }
+  .r1 {
+      grid-column: span 1;
+  }
+  .r2,
+  .r3 {
+      grid-column: span 1;
+  }
+  #cloud {
+      display: block;
+      margin: auto;
+      width: 90vh;
+      float: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      background-color: #04324b;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      text-align: center;
+  }
+  #menu {
+      border: white 1px solid;
+  }
+  .navbar-links.active {
+      display: flex;
+  }
+  .navbar-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .navbar-toggle i {
+      font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="32" viewBox="0 0 33 32">
+  <defs>
+    <clipPath id="clip-Artboard_7">
+      <rect width="33" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_7" data-name="Artboard – 7" clip-path="url(#clip-Artboard_7)">
+    <g id="Group_171958" data-name="Group 171958" transform="translate(11762.351 -18239.205)">
+      <path id="Path_29005" data-name="Path 29005" d="M70,350H80.138v10.138H70Z" transform="translate(-11831.352 17910.275)" fill="none" stroke="#007fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_29006" data-name="Path 29006" d="M350,350h10.138v10.138H350Z" transform="translate(-12091.074 17910.275)" fill="none" stroke="#007fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_29007" data-name="Path 29007" d="M210,70h10.138V80.138H210Z" transform="translate(-11961.214 18170)" fill="none" stroke="#007fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_29008" data-name="Path 29008" d="M160.277,285.069V280H140v5.069" transform="translate(-11896.282 17975.205)" fill="none" stroke="#007fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_29009" data-name="Path 29009" d="M280,215.069V210" transform="translate(-12026.144 18040.139)" fill="none" stroke="#007fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
